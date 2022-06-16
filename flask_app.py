@@ -8,7 +8,4 @@ app = Flask(__name__)
 
 @app.route('/urlend')
 def hello_world():
-    return 'Hello from Flask!'
-def test_something():
-    input("Say something ")
-    return test_something
+    return 'Hello from Flask! and testing'
