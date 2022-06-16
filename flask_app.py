@@ -6,6 +6,6 @@ from rhino3dm import *
 
 app = Flask(__name__)
 
-@app.route('/urlend')
+@app.route('/')
 def hello_world():
-    return 'Hello from Flask! and testing'
+    return 'Hello from Flask!'
