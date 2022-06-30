@@ -2,7 +2,19 @@ import pandas as pd
 import warnings
 from flask import Flask, request
 from rhino3dm import *
+import ghhops_server as hs
 app = Flask(__name__)
+hops =hs.Hops(app)
+
+#unable to determine inputs and create outputs
+@hops.component(
+    "/pointat",
+    name="Supplychain",
+    description="supply chain sustainability report",
+    outputs=[
+        hs.HopsString("test outcome", "to", "testing the outcome of the api")
+    ]
+)
 
 @app.route('/supplychain')
 def sc():
