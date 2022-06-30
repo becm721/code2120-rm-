@@ -11,7 +11,7 @@ def sc():
     pd.options.display.max_seq_items = 2000
     warnings.filterwarnings('ignore')
 
-    df_lines = pd.read_csv('order_lines.csv', index_col = 0)
+    df_lines = pd.read_csv('Data/order_lines.csv', index_col = 0)
     print("{:,} order lines to process".format(len(df_lines)))
     df_lines.head()
 
